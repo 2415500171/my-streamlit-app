@@ -99,7 +99,7 @@ st.write("This application analyzes the sentiment of text in multiple languages 
 
 # Input method selection(Input dene ke liye)
 input_method = st.radio(
-    "Choose your input method👇🏻:",
+    "**Choose your input method👇🏻:**",
     ("Enter Text Manually", "Upload a Text File (.txt, .csv)"),
     index=0
 )
@@ -107,7 +107,7 @@ input_method = st.radio(
 # Text input section
 if input_method == "Enter Text Manually":
     user_input = st.text_area("Enter text for sentiment analysis:", "Project is as Good as it has to be!", height=150)
-    if st.button("Analyze Sentiment"):
+    if st.button("**Analyze Sentiment**"):
         if user_input:
             try:
                 # Automatic Language Detection
