@@ -97,17 +97,17 @@ st.markdown("---")
 
 st.write("This application analyzes the sentiment of text in multiple languages using a pre-trained 🤗 Transformers model, displaying results with intuitive emojis.")
 
-# Input method selection
+# Input method selection(Input dene ke liye)
 input_method = st.radio(
-    "Choose your input method:",
+    "Choose your input method👇🏻:",
     ("Enter Text Manually", "Upload a Text File (.txt, .csv)"),
     index=0
 )
 
 # Text input section
 if input_method == "Enter Text Manually":
-    user_input = st.text_area("Enter text for sentiment analysis:", "This product is excellent!", height=150)
-    if st.button("Analyze Sentiment (Manual Input)"):
+    user_input = st.text_area("Enter text for sentiment analysis:", "Project is as Good as it has to be!", height=150)
+    if st.button("Analyze Sentiment"):
         if user_input:
             try:
                 # Automatic Language Detection
@@ -207,4 +207,5 @@ else:
         st.info("Upload a `.txt` file with one sentence per line, or a `.csv` file with a text column.")
 
 st.markdown("---")
-st.markdown("Created by **Divyanshu Singh** for a college project using Streamlit, Hugging Face Transformers, and Langdetect.")
+st.markdown("Pipeline build by **Divyanshu and Gaurav** for a college project using ( Streamlit, Hugging Face Transformers, and Langdetect )")
+st.markdown("For any issue contact **divyanshubuisness@gmail.com**")
