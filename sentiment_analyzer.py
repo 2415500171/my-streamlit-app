@@ -95,7 +95,7 @@ st.set_page_config(page_title="Multilingual Sentiment Analysis", layout="wide")
 st.title("🌎 Multilingual Sentiment Analysis Pipeline")
 st.markdown("---")
 
-st.write("This application analyzes the sentiment of text in multiple languages using a pre-trained 🤗 Transformers model, displaying results with intuitive emojis.")
+st.write("This application analyzes the sentiment of text in multiple languages using a pre-trained Transformers model, displaying results with amazing emojis.")
 
 # Input method selection(Input dene ke liye)
 input_method = st.radio(
