@@ -75,9 +75,9 @@ def analyze_sentiment(text):
     return {
         "text": text,
         "predicted_star_rating": predicted_star,
-        "sentiment_emoji_label": sentiment_emoji_label,  # New field
+        "sentiment_emoji_label": sentiment_emoji_label,
         "confidence_scores": sentiment_scores,
-        "color_style": color_style  # For Streamlit display
+        "color_style": color_style
     }
 
 st.set_page_config(page_title="Multilingual Sentiment Analysis", layout="wide")
@@ -150,7 +150,7 @@ else:
                 st.success(f"Loaded {len(texts_to_analyze)} texts from column '{text_column}'.")
             else:
                 st.error("No text column selected. Please select a column to proceed.")
-                texts_to_analyze = []  # Clear if no column selected
+                texts_to_analyze = [] 
 
         if texts_to_analyze and st.button("Analyze Sentiment (File Upload)"):
             st.subheader("Batch Analysis Results:")
