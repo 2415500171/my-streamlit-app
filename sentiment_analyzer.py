@@ -16,7 +16,7 @@ def load_model():
     model_name = "nlptown/bert-base-multilingual-uncased-sentiment"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForSequenceClassification.from_pretrained(model_name)
-    # Move model to GPU if available once during loading
+    
     if torch.cuda.is_available():
         model.to('cuda')
     return tokenizer, model
